@@ -10,8 +10,11 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
+
+    private val mainActivity = MainActivity()
+
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun checkTheSubstrateOnWallet() {
+        assertEquals(80, mainActivity.substrateOnMyWallet(20))
     }
 }
