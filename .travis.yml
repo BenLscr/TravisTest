@@ -6,6 +6,8 @@ android:
     - platform-tools
     - build-tools-30.0.0
     - android-27
+    - extra-android-m2repository
+    - sys-img-x86-android-27
   licenses:
     - '.+'
 jdk:
