@@ -39,8 +39,7 @@ android:
 before_install:
   - chmod +x gradlew
   # a virer si tool et platformtool
-  # - yes | sdkmanager "platforms;android-29"
-  - yes | sdkmanager --licenses
+  - yes | sdkmanager "platforms;android-29"
 
 # Emulator Management: Create, Start and Wait
 before_script:
@@ -51,4 +50,5 @@ before_script:
 
 # Run test
 script:
+  - android list target
   - ./gradlew clean build connectedCheck --stacktrace
