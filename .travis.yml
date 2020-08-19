@@ -7,9 +7,7 @@ android:
     - build-tools-30.0.0
     - android-27
   licenses:
-    - 'android-sdk-preview-license-.+'
-    - 'android-sdk-license-.+'
-    - 'google-gdk-license-.+'
+    - '.+'
 jdk:
    - oraclejdk8
 before_install:
